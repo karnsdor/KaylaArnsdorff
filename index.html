@@ -47,12 +47,15 @@ html, body, h1, h2, h3, h4, h5, h6, p {
   margin-left: 280px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* Hide Content on Small Screens */
+.hidden-xs, .hidden-sm, .hidden-md, .hidden-lg {
+  .responsive-visibility();
 }
-
+.hidden-xs {
+  @media (max-width: @screen-tablet) {
+    .responsive-invisibility();
+  }
+}
 /* Dots in Skills Section */
 .dot {
   height: 14px;
@@ -82,7 +85,7 @@ html, body, h1, h2, h3, h4, h5, h6, p {
 <body>
 
 <!-- Side Bar -->
-<div class="hidden-xs bg-danger">
+<div class="hidden-xs">
 <div class="sidenav">
     <div class="w3-display-container">
         <img src="ArnsdorffPhoto.JPG" style="width:100%" alt="Avatar"> <hr>
