@@ -1,208 +1,251 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Kayla Arnsdorff</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+      integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+      crossorigin='anonymous'>
 <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif
+    html, body, h1, h2, h3, h4, h5, h6, p {
+        font-family: "Roboto", sans-serif; color: dimgray
     }
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 280px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 20px;
+  background-color: white; /* Color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  text-align:left;
+  font-size: 25px;
+  color: dimgrey;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ff9800;
+}
+
+/* Style page content */
+.main {
+  margin-left: 280px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  background-color: #ff9800;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotg {
+  height: 14px;
+  width: 14px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotw {
+  height: 14px;
+  width: 14px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 </style>
-<body class="w3-light-grey">
+<body>
 
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-        <!-- The Grid -->
-        <div class="w3-row-padding">
+<!-- The Grid -->
+<div class="w3-row-padding">
 
-            <!-- Left Column -->
-            <div class="w3-third">
-
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="ArnsdorffPhoto.JPG" style="width:100%" alt="Avatar">
-                        <div class="w3-display-bottomleft w3-container w3-text-black">
-                            <h2>Kayla Arnsdorff</h2>
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-orange"></i>Industrial Engineering Student</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-orange"></i>Knoxville, TN</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-orange"></i>karnsdor@vols.utk.edu</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-orange"></i>+1 (865) 555-5555</p>
-                        <hr>
-
-                        <p class="w3-large"><b><i
-                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-orange"></i>Skills</b></p>
-                        <p>Microsoft PowerPoint</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:95%">95%</div>
-                        </div>
-                        <p>Microsoft Excel</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:90%">
-                                <div class="w3-center w3-text-black">90%</div>
-                            </div>
-                        </div>
-                        <p>Team Building</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:85%">85%</div>
-                        </div>
-                        <p>Presentation</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:80%">80%</div>
-                        </div>
-                        <p>GitHub</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:75%">75%</div>
-                        </div>
-                        <p>HTML</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:70%">70%</div>
-                        </div>
-                        <br>
-
-                        <p class="w3-large w3-text-theme"><b><i
-                                    class="fa fa-globe fa-fw w3-margin-right w3-text-orange"></i>Languages</b></p>
-                        <p>English</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-orange" style="height:24px;width:100%"></div>
-                        </div>
-                        <p>French</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-orange" style="height:24px;width:25%"></div>
-                        </div>
-                        <br>
-                    </div>
-                </div><br>
-
-                <!-- End Left Column -->
-            </div>
-
-            <!-- Right Column -->
-            <div class="w3-twothird">
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Work Experience
-                    </h2>
-                    <div class="w3-container">
-                        <h5 class="w3-text-orange"><b>Steel Partners</b></h5>
-                        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2018 - <span
-                                class="w3-tag w3-orange w3-round">Present</span></h6>
-                        <p>Position: Steel Business System Co-Op</p>
-                        <p>Location: Kenosha, WI / Anderson, SC</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-text-orange"><b>Undergraduate Research Assistant</b></h5>
-                        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2016 - <span
-                            class="w3-tag w3-orange w3-round">Present</span></h6>
-                            <p>Position: Engineering Fundamentals Undergraduate Research Assistant</p>
-                            <p>Location: Knoxville, TN</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-text-orange"><b>Chick-Fil-A</b></h5>
-                        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2014 - July 2016
-                        </h6>
-                        <p>Position: Manager</p>
-                        <p>Location: Powell, TN</p>
-                        <br>
-                    </div>
-                </div>
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Education</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-text-orange"><b>University of Tennessee, Knoxville</b></h5>
-                        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - December 2020</h6>
-                        <p>Major: Industrial and Systems Engineering</p>
-                        <i class="w3-text-grey"> <p>Website: <a href="https://ise.utk.edu">ISE Department</a></i></p>
-                        <p>Minor: Reliability and Maintainability</p>
-                        <i class="w3-text-grey"> <p>Website: <a href="https://rmc.utk.edu/">Reliability and Maintainability Department</a></i></p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-text-orange"><b>Pellissippi State Community College</b></h5>
-                        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2013 - December 2015</h6>
-                        <p>Dual Enrollment</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-text-orange"><b>Halls High School</b></h5>
-                        <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2012 - May 2016</h6>
-                        <p>High School Diploma</p><br>
-                    </div>
-                </div>
-                    <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Courses</h2>
-                        <div class="w3-container">
-                            <h5 class="w3-text-orange"><b>Industrial and Systems Engineering Courses</b></h5>
-                            <p>Engineering Statistics</p>
-                            <p>Information Systems Analysis and Design</p>
-                            <p>Work Measurements</p>
-                            <p>Statistical Quality Control and Management</p>
-                            <hr>
-                        </div>
-                    </div>
-
-                    <div class="w3-container w3-card w3-white">
-                        <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-building fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Co-Op</h2>
-                        <div class="w3-container">
-                            <h5 class="w3-text-orange"><b>Cooperative Education Experience</b></h5>
-                            <p>I am currently working as a co-op student for Steel Partners. 
-                                During my first two work terms, I was located at SL-Montevideo Technologies Inc. 
-                                (SL-MTI) in Kenosha, Wisconsin. 
-                                My duties at MTI included working with the supply chain team on inventory management, 
-                                developing shadow boards and completing time studies for the new value stream, 
-                                performing weekly 5S (sort, straighten, shine, standardize, sustain) and safety audits, 
-                                planning and executing kaizen events, and developing lean manufacturing training.  
-                                In addition to this, I was a member of the event team at MTI 
-                                and helped to plan community service events for the company such as a coat/clothing drive, 
-                                working events for Habitat for Humanity, 
-                                and a chili cook off and bake sale for proceeds towards the animal shelter. 
-                                For my upcoming co-op work term, I will be located at JPS Composite Materials in Anderson, South Carolina. 
-                                My duties at JPS will be similar to those at MTI. 
-                                I will be working closely with the site lean manager to help support lean manufacturing.</p>
-                            <hr>
-                        </div>
-                    </div>
-
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
+<!-- Side Bar -->
+<div class="sidenav">
+    <!-- Picture -->
+    <div class="w3-white w3-card-4">
+        <div class="w3-display-container">
+            <img src="ArnsdorffPhoto.JPG" style="width:100%" alt="Avatar">
         </div>
+    </div>
+    <!-- Links -->
+    <br>
+    <a href="#home"> <i class="fas fa-home fa-fw w3-margin-right w3-text-orange"></i>Home</a>
+    <a href="#experience"> <i class="fa fa-suitcase fa-fw w3-margin-right w3-text-orange"></i> Experience</a>
+    <a href="#education"> <i class="fas fa-graduation-cap fa-fw w3-margin-right w3-text-orange"></i> Education</a>
+    <a href="#courses"> <i class="fa fa-book fa-fw w3-margin-right w3-text-orange"></i> Courses</a>
+    <a href="#skills"> <i class="fas fa-clipboard-list fa-fw w3-margin-right w3 w3-text-orange"></i> Skills</a>
+    <a href="#connect"> <i class="fas fa-handshake fa-fw w3-margin-right w3-text-orange"></i> Connect</a>
+</div>
 
-        <!-- End Page Container -->
+<!-- Header Section -->
+<div class="main w3-container w3-card w3-white w3-margin-bottom" id="home">
+    <h1 class="w3-text-orange w3-center"><b>Kayla Arnsdorff</b></h1>
+      <h3 class="w3-center">Objective: To obtain an internship position in the industrial engineering field that builds upon 
+            and <br> utilizes my collegiate, co-op, and community experiences and activities.</h2>  
+</div>
+
+<!-- Experience -->
+<div class="main w3-container w3-card w3-white w3-margin-bottom" id="experience">
+        <h2 class="w3-padding-16">
+        <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Work Experience</h2>
+
+    <div class="w3-container">
+        <h5 class="w3-text-orange"><b>Undergraduate Research Assistant</b></h5>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2016 - 
+            <span class="w3-tag w3-orange w3-round w3-text-dark-grey">Present</span></h6>
+            <p>Position: Engineering Education Undergraduate Research Assistant</p>
+            <p>Location: Knoxville, Tennessee</p>
+        <hr>
     </div>
 
-    <footer class="w3-container w3-orange w3-center w3-margin-top">
-        <p>Find me on social media.</p>
-        <a href="https://www.instagram.com/kay_nicole10/">
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/kayla-arnsdorff/">
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
+    <div class="w3-container">
+        <h5 class="w3-text-orange"><b>Steel Partners</b></h5>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2018 - April 2018</h6>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2018 - December 2018</h6>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - July 2019</h6>
+            <p>Position: Steel Business System Co-Op</p>
+            <p>Location: Kenosha, Wisconsin / Anderson, South Carolina</p>
+        <hr>
+    </div>
+
+    <div class="w3-container">
+        <h5 class="w3-text-orange"><b>Chick-Fil-A</b></h5>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2014 - July 2016</h6>
+            <p>Position: Manager</p>
+            <p>Location: Powell, Tennessee</p> <br>
+    </div>
+</div>
+
+<!-- Education -->
+<div class="main w3-container w3-card w3-white w3-margin-bottom" id="education">
+    <h2 class="w3-text-grey w3-padding-16">
+    <i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Education</h2>
+    <div class="w3-container">
+        <h5 class="w3-text-orange"><b>University of Tennessee, Knoxville</b></h5>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2016 - December 2020</h6>
+            <p>Major: Industrial and Systems Engineering</p>
+            <p>Minor: Reliability and Maintainability</p>
+            <p>GPA: 3.83 (4.00 Scale)</p>
+        <hr>
+    </div>
+
+    <div class="w3-container">
+        <h5 class="w3-text-orange"><b>Pellissippi State Community College</b></h5>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2013 - December 2015</h6>
+            <p>Status: Dual Enrollment</p>
+        <hr>
+    </div>
+
+    <div class="w3-container">
+        <h5 class="w3-text-orange"><b>Halls High School</b></h5>
+        <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2012 - May 2016</h6>
+            <p>Status: High School Diploma</p><br>
+    </div>
+</div>
+
+<!-- Courses -->
+<div class="main w3-container w3-card w3-white w3-margin-bottom" id="courses">
+    <h2 class="w3-padding-16">
+    <i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Courses</h2>
+    <div class="w3-container">
+        <h5 class="w3-text-orange"><b>Industrial and Systems Engineering Courses Completed</b></h5>
+            <div class="w3-half">
+                <p> Operations Research II: Probabilistic Models </p>
+                <p> Introduction to Industrial and Systems Engineering </p>
+                <p> Leadership in Industrial Engineering I: Professional Writing </p>
+                <p> Work Measurement and Introduction to Manufacturing Processes </p>
+            </div>
+            <div class="w3-half">
+                <p> Engineering Statistics </p>
+                <p> Engineering Economic Analysis </p>
+                <p> Information Systems Analysis and Design </p>
+                <p> Statistical Quality Control and Management </p>
+            </div>
+    </div>
+</div>
+
+<!-- Skills -->
+<div class="main w3-container w3-card w3-white w3-margin-bottom" id="skills">
+    <h2 class="w3-padding-16">
+    <i class="fas fa-clipboard-list fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Skills</h2>
+    <div class="w3-container">
+        <div class="w3-half">
+            <h5 class="w3-text-orange"><b>Hard Skills</b></h5>
+                <p> Microsoft Suite <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </p>
+                <p> Event Planning <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dotg"></span> </p>
+                <p> MySQL Database System <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dotg"></span> <span class="dotg"></span> <span class="dotg"></span> </p>
+                <p> Static Website Development <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dotg"></span> <span class="dotg"></span> </p>
+            </div>
+        <div class="w3-half">
+            <h5 class="w3-text-orange"><b>Soft Skills</b></h5>
+                <p> Communication <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dotg"></span> </p>
+                <p> Teamwork <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </p>
+                <p> Leadership <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dotg"></span> <span class="dotg"></span> </p>
+                <p> Adaptability <span class="dotw"></span>
+                    <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </p>
+        </div>
+    </div>
+</div>
+
+<!-- Connect -->
+<div class="main w3-container w3-card w3-white w3-margin-bottom" id="connect">
+    <h2 class="w3-padding-16">
+    <i class="fas fa-handshake fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Connect With Me</h2>
+        <div class="w3-container">
+            <h5 class="w3-text-orange"><b>Find Me on LinkedIn</b></h5>
+            <a href="https://www.linkedin.com/in/kayla-arnsdorff/">
+                <i class="fab fa-linkedin w3-xxlarge w3-text-grey w3-hover-opacity"><br></i>
+            </a>
+        </div>
+    <br>
+</div>
+
+<!-- End Grid -->
+</div>
+
+<!-- End Page Container -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-orange w3-center w3-margin-top">
+    <br>
+    <br>
+</footer>
 
 </body>
-
 </html>
